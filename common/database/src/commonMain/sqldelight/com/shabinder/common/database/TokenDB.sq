@@ -1,0 +1,16 @@
+CREATE TABLE IF NOT EXISTS Token (
+    tokenIndex INTEGER NOT NULL PRIMARY KEY ON CONFLICT REPLACE,
+    accessToken TEXT NOT NULL,
+    expiry INTEGER NOT NULL
+);
+
+add:
+INSERT OR REPLACE INTO Token (tokenIndex,accessToken,expiry)
+VALUES (0,?,?);
+
+select:
+SELECT * FROM Token
+WHERE tokenIndex = 0;
+
+clear:
+DELETE FROM Token;

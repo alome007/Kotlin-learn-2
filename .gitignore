@@ -1,0 +1,14 @@
+.idea/
+local.properties
+/android/release/
+/android/google-services.json
+build/
+.gradle/
+terraform.tfvars
+.terraform/
+/spotiflyer-ios/Pods/
+/fastlane/report.xml
+/fastlane/README.md
+Gemfile
+Gemfile.lock
+/maintenance-tasks/build/
